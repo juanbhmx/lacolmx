@@ -145,7 +145,7 @@ export default function Carrito() {
               <input type="checkbox" checked="checked" name="sameadr" />
 Dirección de envío igual a la de facturación
         </label>
-            <input onClick={Direccion} value="Continuar" class="btn" />
+            <input onClick={Direccion} value="Continuar y Pagar" class="btn" />
 
           {/* </form> */}
         </div>
