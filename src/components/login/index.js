@@ -8,6 +8,7 @@ export default function Login() {
 
     const [Usuario, setUsuario] = useState("");
     const [Contra, setContra] = useState("");
+
     const Acceder = () => {
         Axios.post("https://api-colmena.herokuapp.com/login", {
             Usuario: Usuario,
@@ -17,19 +18,25 @@ export default function Login() {
                 alert(" " + response.data.message);
 
             } else {
-                alert("Bienvenido");
+                alert("Bienvenidoddd" + Usuario);
                 window.location.href = "/";
             }
         });
     };
     return (
         <div className="form">
-            <input type="text" placeholder="Usuario" onChange={(e) => {
-                setUsuario(e.target.value);
-            }} />
-            <input type="password" placeholder="Contraseña" onChange={(e) => {
-                setContra(e.target.value);
-            }} />
+            <input
+                type="text"
+                placeholder="Usuario"
+                onChange={(e) => {
+                    setUsuario(e.target.value);
+                }} />
+            <input
+                type="password"
+                placeholder="Contraseña"
+                onChange={(e) => {
+                    setContra(e.target.value);
+                }} />
             <button onClick={Acceder}>Acceder</button>
         </div>
 

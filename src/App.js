@@ -40,7 +40,9 @@ export default function App() {
     }).then((response) => {
       setuser(response.data);
     });
-  }, []);
+  }, 
+  []);
+  
   console.log(user);
   console.log(total);
   return (
@@ -85,7 +87,7 @@ export default function App() {
                   <div class="shop-menu pull-right">
                     <ul class="nav navbar-nav">
                       {Object.values(user).map(elemento => (
-                        <li><a>Hola: <i class="fa fa-user"></i>  {elemento.Usuario} </a></li>
+                        <li><a> <i class="fa fa-user"></i> {elemento.Usuario} </a></li>
                       ))}
                       <li>
                         <hr />
