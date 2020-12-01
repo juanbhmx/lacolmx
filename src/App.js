@@ -85,7 +85,7 @@ export default function App() {
                   <div class="shop-menu pull-right">
                     <ul class="nav navbar-nav">
                       {Object.values(user).map(elemento => (
-                        <li><a href="/login">Hola: <i class="fa fa-user"></i>  {elemento.Usuario} </a></li>
+                        <li><a>Hola: <i class="fa fa-user"></i>  {elemento.Usuario} </a></li>
                       ))}
                       <li>
                         <hr />
