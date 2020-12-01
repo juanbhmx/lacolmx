@@ -24,7 +24,7 @@ export default function Content() {
 
   useEffect(() => {
 
-    Axios.get("https://api-colmena.herokuapp.com/Categorias", {
+    Axios.get("https://api-colmena.herokuapp.com/Productos", {
     }).then((response) => {
       setData(response.data);
     });
