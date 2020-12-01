@@ -84,7 +84,9 @@ export default function App() {
                 <div class="col-sm-8">
                   <div class="shop-menu pull-right">
                     <ul class="nav navbar-nav">
-                      <li><a href="/login"><i class="fa fa-user"></i> Iniciar Sesion </a></li>
+                      {Object.values(user).map(elemento => (
+                        <li><a href="/login">Hola: <i class="fa fa-user"></i>  {elemento.Usuario} </a></li>
+                      ))}
                       <li>
                         <hr />
                         <Switch class="row">
@@ -100,10 +102,7 @@ export default function App() {
                           ))}
                           <i class="fa fa-shopping-cart"></i> Carrito
                         </a>
-                        <span>Hola: </span>
-                        {Object.values(user).map(elemento => (
-                          <span> {elemento.Usuario} - Bienvenido</span>
-                          ))}
+
                       </li>
                       <li>
                         <hr />
@@ -111,14 +110,10 @@ export default function App() {
                       <li>
                         <hr />
                       </li>
-                      <li><a href="/register" ><i class="fa fa-lock"></i> Registrarme</a></li>
+                      <li><a href="https://lacolmenamx.netlify.app/" ><i class="fa fa-lock"></i> Cerrar Sesion</a></li>
                       <li>
                         <hr />
-                        <Switch >
-                          <Route path="/register" component={Register}>
-                            <Register />
-                          </Route>
-                        </Switch>
+                       
                       </li>
                     </ul>
                   </div>
