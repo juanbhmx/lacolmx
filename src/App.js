@@ -17,15 +17,9 @@ import PlaceOrder from './components/PlaceOrder';
 import UpUs from './components/updateuser'
 import HPay from './components/historialpay';
 import Header from './components/header';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Check from './components/checkout';
 import Axios from "axios";
-
 
 
 export default function App() {
@@ -113,7 +107,7 @@ export default function App() {
                       <li><a href="https://lacolmenamx.netlify.app/" ><i class="fa fa-lock"></i> Cerrar Sesion</a></li>
                       <li>
                         <hr />
-                       
+
                       </li>
                     </ul>
                   </div>
