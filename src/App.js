@@ -21,7 +21,6 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Check from './components/checkout';
 import Axios from "axios";
 
-
 export default function App() {
   const [total, settotal] = useState("");
   const [user, setuser] = useState("");
